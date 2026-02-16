@@ -2,10 +2,10 @@ import { test } from '@playwright/test'
 import { RegisterPage } from '../pages/register-page';
 
 test('test 1', async ({ page }) => {
-    const registerPage = new RegisterPage(page);
 
     test.step("Navigate to Register Page and sign up", async() =>{
-        await registerPage.navigateToRegisterPage();
+        const registerPage = new RegisterPage(page);
+        await registerPage.navigateToPlaywrightPage();
         await registerPage.clickRegisterPageButton();
         await registerPage.inputUserName("Phat");
         await registerPage.inputEmail("phatpham@gmail.com");

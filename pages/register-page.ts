@@ -2,15 +2,15 @@ import { Page } from "@playwright/test";
 import { BasePage } from "./base-page";
 
 export class RegisterPage extends BasePage {
-    pageURL = "https://material.playwrightvn.com/";
+    pageURL = "https://material.playwrightvn.com";
     pageTitle = "Bài học 1: Register Page (có đủ các element)";
 
     constructor(page: Page){
         super(page);
     }
 
-    async navigateToRegisterPage(){
-        await this.navigateTo(this.pageTitle);
+    async navigateToPlaywrightPage(){
+        await this.navigateTo("https://material.playwrightvn.com");
     }
 
     async clickRegisterPageButton(){
