@@ -1,7 +1,7 @@
 import { Page } from "@playwright/test";
-import { BasePage } from "./pages/base-page";
+import { BasePage } from "./base-page";
 
-export class RegisterPage extends BasePage{
+export class RegisterPage extends BasePage {
     pageURL = "https://material.playwrightvn.com/";
     pageTitle = "Bài học 1: Register Page (có đủ các element)";
 
